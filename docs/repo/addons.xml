@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="script.maxstream" name="MaxStream IPTV" version="2.2.0" provider-name="xmahieu">
+<addon id="script.maxstream" name="MaxStream IPTV" version="2.2.1" provider-name="MaxStreamKodi">
     <requires>
         <import addon="xbmc.python" version="3.0.1"/>
     </requires>
@@ -17,21 +17,21 @@
         <disclaimer lang="fr_FR">Cette extension n'héberge ni ne fournit aucun contenu. Utilisez-la uniquement avec des listes auxquelles vous avez légalement accès.</disclaimer>
         <platform>all</platform>
         <license>GPL-3.0-or-later</license>
-        <website>https://xmahieu.github.io/maxstream/</website>
-        <source>https://github.com/xmahieu/maxstream</source>
-        <news>v2.2.0 - Support button (5 € donation), published in the MaxStream repository. v2.1.0 - Stream relay: reconnects within 5 s when the provider stalls and resumes at the exact position; TV guide never refreshed during playback. v2.0.2 - Long titles scroll when selected. v2.0.1 - Kodi cache optimisation for streaming (fixes short freezes), early end of stream no longer marks videos as watched. v2.0.0 - Graphical interface (home, live TV with preview, movies, series, guide) and Kodi TV menu synchronisation</news>
+        <website>https://maxstreamkodi-cyber.github.io/maxstream/</website>
+        <source>https://github.com/maxstreamkodi-cyber/maxstream</source>
+        <news>v2.2.1 - New home: maxstreamkodi-cyber.github.io/maxstream. v2.2.0 - Support button (5 € donation), published in the MaxStream repository. v2.1.0 - Stream relay: reconnects within 5 s when the provider stalls and resumes at the exact position; TV guide never refreshed during playback. v2.0.2 - Long titles scroll when selected. v2.0.1 - Kodi cache optimisation for streaming (fixes short freezes), early end of stream no longer marks videos as watched. v2.0.0 - Graphical interface (home, live TV with preview, movies, series, guide) and Kodi TV menu synchronisation</news>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
-<addon id="repository.maxstream" name="MaxStream Repository" version="1.0.0" provider-name="xmahieu">
+<addon id="repository.maxstream" name="MaxStream Repository" version="1.0.1" provider-name="MaxStreamKodi">
     <extension point="xbmc.addon.repository" name="MaxStream Repository">
         <dir>
-            <info compressed="false">https://xmahieu.github.io/maxstream/repo/addons.xml</info>
-            <checksum>https://xmahieu.github.io/maxstream/repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://xmahieu.github.io/maxstream/repo/</datadir>
+            <info compressed="false">https://maxstreamkodi-cyber.github.io/maxstream/repo/addons.xml</info>
+            <checksum>https://maxstreamkodi-cyber.github.io/maxstream/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://maxstreamkodi-cyber.github.io/maxstream/repo/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -41,8 +41,8 @@
         <description lang="fr_FR">Installez MaxStream IPTV et recevez automatiquement ses mises à jour.</description>
         <platform>all</platform>
         <license>GPL-3.0-or-later</license>
-        <website>https://xmahieu.github.io/maxstream/</website>
-        <source>https://github.com/xmahieu/maxstream</source>
+        <website>https://maxstreamkodi-cyber.github.io/maxstream/</website>
+        <source>https://github.com/maxstreamkodi-cyber/maxstream</source>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
