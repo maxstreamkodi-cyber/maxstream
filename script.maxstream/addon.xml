@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.maxstream" name="MaxStream IPTV" version="2.2.0" provider-name="xmahieu">
+    <requires>
+        <import addon="xbmc.python" version="3.0.1"/>
+    </requires>
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">IPTV app for M3U playlists and Xtream Codes accounts</summary>
+        <summary lang="fr_FR">Application IPTV pour listes M3U et comptes Xtream Codes</summary>
+        <description lang="en_GB">A full-screen IPTV app for Kodi: Live TV with channel preview and EPG, Movies, Series, Catch-up, favourites, continue watching, search, multiple playlists and parental control. Channels and TV guide can also be synchronised to Kodi's TV menu through PVR IPTV Simple Client. Supports Xtream Codes API logins, M3U / M3U Plus URLs and local M3U files. No content is provided by this add-on.[CR][CR]MaxStream is free. Support it with a 5 € donation: paypal.me/MaxStreamKodi/5EUR</description>
+        <description lang="fr_FR">Une application IPTV plein écran pour Kodi : TV en direct avec aperçu et guide EPG, films, séries, replay, favoris, reprise de lecture, recherche, plusieurs listes et contrôle parental. Les chaînes et le guide TV peuvent aussi être synchronisés vers le menu TV de Kodi via PVR IPTV Simple Client. Compatible API Xtream Codes, URL M3U / M3U Plus et fichiers M3U locaux. Aucun contenu n'est fourni par cette extension.[CR][CR]MaxStream est gratuit. Soutenez-le avec un don de 5 € : paypal.me/MaxStreamKodi/5EUR</description>
+        <disclaimer lang="en_GB">This add-on does not host or provide any content. Use it only with playlists you are legally entitled to watch.</disclaimer>
+        <disclaimer lang="fr_FR">Cette extension n'héberge ni ne fournit aucun contenu. Utilisez-la uniquement avec des listes auxquelles vous avez légalement accès.</disclaimer>
+        <platform>all</platform>
+        <license>GPL-3.0-or-later</license>
+        <website>https://xmahieu.github.io/maxstream/</website>
+        <source>https://github.com/xmahieu/maxstream</source>
+        <news>v2.2.0 - Support button (5 € donation), published in the MaxStream repository. v2.1.0 - Stream relay: reconnects within 5 s when the provider stalls and resumes at the exact position; TV guide never refreshed during playback. v2.0.2 - Long titles scroll when selected. v2.0.1 - Kodi cache optimisation for streaming (fixes short freezes), early end of stream no longer marks videos as watched. v2.0.0 - Graphical interface (home, live TV with preview, movies, series, guide) and Kodi TV menu synchronisation</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>

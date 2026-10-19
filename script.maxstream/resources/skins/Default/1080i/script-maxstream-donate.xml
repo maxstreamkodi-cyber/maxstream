@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window type="dialog">
+    <defaultcontrol always="true">301</defaultcontrol>
+    <controls>
+        <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1080</height>
+            <texture colordiffuse="E6000000">ms_white.png</texture>
+        </control>
+        <control type="image">
+            <left>410</left>
+            <top>250</top>
+            <width>1100</width>
+            <height>580</height>
+            <texture border="30" colordiffuse="FF121C2E">ms_r28.png</texture>
+        </control>
+        <control type="image">
+            <left>460</left>
+            <top>300</top>
+            <width>400</width>
+            <height>400</height>
+            <texture border="22" colordiffuse="FFFFFFFF">ms_r20.png</texture>
+        </control>
+        <control type="image">
+            <left>480</left>
+            <top>320</top>
+            <width>360</width>
+            <height>360</height>
+            <texture>donate_qr.png</texture>
+        </control>
+        <control type="label">
+            <left>460</left>
+            <top>712</top>
+            <width>400</width>
+            <height>40</height>
+            <font>font10</font>
+            <textcolor>FFA9B8D0</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>paypal.me/MaxStreamKodi/5EUR</label>
+        </control>
+        <control type="image">
+            <left>910</left>
+            <top>300</top>
+            <width>64</width>
+            <height>64</height>
+            <texture border="22" colordiffuse="FFC26A12">ms_r20.png</texture>
+        </control>
+        <control type="image">
+            <left>924</left>
+            <top>314</top>
+            <width>36</width>
+            <height>36</height>
+            <texture colordiffuse="FFFFFFFF">ic_fav.png</texture>
+        </control>
+        <control type="label">
+            <left>994</left>
+            <top>300</top>
+            <width>486</width>
+            <height>64</height>
+            <font>font13</font>
+            <textcolor>FFEAF1FB</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>[B]$ADDON[script.maxstream 30630][/B]</label>
+            <scroll>true</scroll>
+        </control>
+        <control type="textbox">
+            <left>910</left>
+            <top>390</top>
+            <width>560</width>
+            <height>220</height>
+            <font>font12</font>
+            <textcolor>FFD2DCEB</textcolor>
+            <label>$ADDON[script.maxstream 30631]</label>
+            <autoscroll delay="6000" time="3000" repeat="10000">true</autoscroll>
+        </control>
+        <control type="button" id="301">
+            <left>910</left>
+            <top>690</top>
+            <width>380</width>
+            <height>64</height>
+            <label>[B]$ADDON[script.maxstream 30632][/B]</label>
+            <font>font12</font>
+            <textcolor>FF0B1220</textcolor>
+            <focusedcolor>FF0B1220</focusedcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textoffsetx>0</textoffsetx>
+            <texturefocus border="22" colordiffuse="FF29B6F6">ms_r20.png</texturefocus>
+            <texturenofocus border="22" colordiffuse="FF29B6F6">ms_r20.png</texturenofocus>
+            <onright>302</onright>
+        </control>
+        <control type="image">
+            <left>902</left>
+            <top>682</top>
+            <width>396</width>
+            <height>80</height>
+            <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+            <visible>Control.HasFocus(301)</visible>
+        </control>
+        <control type="button" id="302">
+            <left>1306</left>
+            <top>690</top>
+            <width>170</width>
+            <height>64</height>
+            <label>[B]$ADDON[script.maxstream 30633][/B]</label>
+            <font>font12</font>
+            <textcolor>FFEAF1FB</textcolor>
+            <focusedcolor>FF0B1220</focusedcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textoffsetx>0</textoffsetx>
+            <texturefocus border="22" colordiffuse="FF29B6F6">ms_r20.png</texturefocus>
+            <texturenofocus border="22" colordiffuse="FF1D2A44">ms_r20.png</texturenofocus>
+            <onleft>301</onleft>
+        </control>
+    </controls>
+</window>

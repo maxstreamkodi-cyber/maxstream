@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <defaultcontrol always="true">101</defaultcontrol>
+    <backgroundcolor>FF0B1220</backgroundcolor>
+    <controls>
+        <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>1920</width>
+            <height>1080</height>
+            <texture colordiffuse="FF0B1220">ms_white.png</texture>
+        </control>
+        <control type="image">
+            <left>72</left>
+            <top>52</top>
+            <width>64</width>
+            <height>64</height>
+            <texture border="22" colordiffuse="FF29B6F6">ms_r20.png</texture>
+        </control>
+        <control type="image">
+            <left>90</left>
+            <top>70</top>
+            <width>28</width>
+            <height>28</height>
+            <texture colordiffuse="FF0B1220">ic_play.png</texture>
+        </control>
+        <control type="label">
+            <left>156</left>
+            <top>52</top>
+            <width>300</width>
+            <height>64</height>
+            <font>font37</font>
+            <textcolor>FFEAF1FB</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>[B]MaxStream[/B]</label>
+        </control>
+        <control type="label">
+            <left>470</left>
+            <top>52</top>
+            <width>620</width>
+            <height>64</height>
+            <font>font12</font>
+            <textcolor>FFA9B8D0</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$INFO[Window.Property(playlist)]</label>
+        </control>
+        <control type="label">
+            <left>980</left>
+            <top>40</top>
+            <width>430</width>
+            <height>56</height>
+            <font>font45</font>
+            <textcolor>FFEAF1FB</textcolor>
+            <align>right</align>
+            <aligny>center</aligny>
+            <label>[B]$INFO[System.Time][/B]</label>
+        </control>
+        <control type="label">
+            <left>980</left>
+            <top>94</top>
+            <width>430</width>
+            <height>30</height>
+            <font>font10</font>
+            <textcolor>FFA9B8D0</textcolor>
+            <align>right</align>
+            <aligny>center</aligny>
+            <label>$INFO[System.Date]</label>
+        </control>
+        <control type="image">
+            <left>1428</left>
+            <top>52</top>
+            <width>260</width>
+            <height>64</height>
+            <texture border="22" colordiffuse="FF16213A">ms_r20.png</texture>
+            <visible>!String.IsEmpty(Window.Property(expiry))</visible>
+        </control>
+        <control type="label">
+            <left>1428</left>
+            <top>52</top>
+            <width>260</width>
+            <height>64</height>
+            <font>font10</font>
+            <textcolor>FFA9B8D0</textcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>$INFO[Window.Property(expiry)]</label>
+            <visible>!String.IsEmpty(Window.Property(expiry))</visible>
+        </control>
+        <control type="button" id="111">
+            <left>1704</left>
+            <top>52</top>
+            <width>64</width>
+            <height>64</height>
+            <label/>
+            <font>font12</font>
+            <textcolor>FFEAF1FB</textcolor>
+            <focusedcolor>FF0B1220</focusedcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textoffsetx>0</textoffsetx>
+            <texturefocus border="22" colordiffuse="FF29B6F6">ms_r20.png</texturefocus>
+            <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+            <ondown>103</ondown>
+            <onright>110</onright>
+        </control>
+        <control type="image">
+            <left>1720</left>
+            <top>68</top>
+            <width>32</width>
+            <height>32</height>
+            <texture colordiffuse="FFFF9F43">ic_fav.png</texture>
+            <visible>!Control.HasFocus(111)</visible>
+        </control>
+        <control type="image">
+            <left>1720</left>
+            <top>68</top>
+            <width>32</width>
+            <height>32</height>
+            <texture colordiffuse="FF0B1220">ic_fav.png</texture>
+            <visible>Control.HasFocus(111)</visible>
+        </control>
+        <control type="button" id="110">
+            <left>1784</left>
+            <top>52</top>
+            <width>64</width>
+            <height>64</height>
+            <label/>
+            <font>font12</font>
+            <textcolor>FFEAF1FB</textcolor>
+            <focusedcolor>FF0B1220</focusedcolor>
+            <align>center</align>
+            <aligny>center</aligny>
+            <textoffsetx>0</textoffsetx>
+            <texturefocus border="22" colordiffuse="FF29B6F6">ms_r20.png</texturefocus>
+            <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+            <ondown>103</ondown>
+            <onleft>111</onleft>
+        </control>
+        <control type="image">
+            <left>1800</left>
+            <top>68</top>
+            <width>32</width>
+            <height>32</height>
+            <texture colordiffuse="FFEAF1FB">ic_settings.png</texture>
+            <visible>!Control.HasFocus(110)</visible>
+        </control>
+        <control type="image">
+            <left>1800</left>
+            <top>68</top>
+            <width>32</width>
+            <height>32</height>
+            <texture colordiffuse="FF0B1220">ic_settings.png</texture>
+            <visible>Control.HasFocus(110)</visible>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="103" center="auto" time="160" tween="sine" condition="Control.HasFocus(101)">Conditional</animation>
+            <control type="button" id="101">
+                <left>72</left>
+                <top>156</top>
+                <width>568</width>
+                <height>380</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="30" colordiffuse="FFB3283A">ms_r28.png</texturefocus>
+                <texturenofocus border="30" colordiffuse="FFB3283A">ms_r28.png</texturenofocus>
+                <onright>102</onright>
+                <ondown>201</ondown>
+                <onup>110</onup>
+            </control>
+            <control type="image">
+                <left>60</left>
+                <top>144</top>
+                <width>592</width>
+                <height>404</height>
+                <texture border="40" colordiffuse="FFFFFFFF">ms_ring28.png</texture>
+                <visible>Control.HasFocus(101)</visible>
+            </control>
+            <control type="image">
+                <left>112</left>
+                <top>196</top>
+                <width>96</width>
+                <height>96</height>
+                <texture colordiffuse="FFFFFFFF">ic_live.png</texture>
+            </control>
+            <control type="label">
+                <left>112</left>
+                <top>380</top>
+                <width>500</width>
+                <height>72</height>
+                <font>font45</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30000][/B]</label>
+            </control>
+            <control type="label">
+                <left>112</left>
+                <top>452</top>
+                <width>500</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>E6FFFFFF</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(live_sub)]</label>
+            </control>
+            <control type="image">
+                <left>460</left>
+                <top>204</top>
+                <width>140</width>
+                <height>44</height>
+                <texture border="22" colordiffuse="FFFFFFFF">ms_r20.png</texture>
+            </control>
+            <control type="label">
+                <left>460</left>
+                <top>204</top>
+                <width>140</width>
+                <height>44</height>
+                <font>font10</font>
+                <textcolor>FFB3283A</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30027][/B]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="103" center="auto" time="160" tween="sine" condition="Control.HasFocus(102)">Conditional</animation>
+            <control type="button" id="102">
+                <left>676</left>
+                <top>156</top>
+                <width>568</width>
+                <height>380</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="30" colordiffuse="FF5B32A8">ms_r28.png</texturefocus>
+                <texturenofocus border="30" colordiffuse="FF5B32A8">ms_r28.png</texturenofocus>
+                <onleft>101</onleft>
+                <onright>103</onright>
+                <ondown>203</ondown>
+                <onup>110</onup>
+            </control>
+            <control type="image">
+                <left>664</left>
+                <top>144</top>
+                <width>592</width>
+                <height>404</height>
+                <texture border="40" colordiffuse="FFFFFFFF">ms_ring28.png</texture>
+                <visible>Control.HasFocus(102)</visible>
+            </control>
+            <control type="image">
+                <left>716</left>
+                <top>196</top>
+                <width>96</width>
+                <height>96</height>
+                <texture colordiffuse="FFFFFFFF">ic_movie.png</texture>
+            </control>
+            <control type="label">
+                <left>716</left>
+                <top>380</top>
+                <width>500</width>
+                <height>72</height>
+                <font>font45</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30001][/B]</label>
+            </control>
+            <control type="label">
+                <left>716</left>
+                <top>452</top>
+                <width>500</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>E6FFFFFF</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(movie_sub)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="103" center="auto" time="160" tween="sine" condition="Control.HasFocus(103)">Conditional</animation>
+            <control type="button" id="103">
+                <left>1280</left>
+                <top>156</top>
+                <width>568</width>
+                <height>380</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="30" colordiffuse="FF1C62C0">ms_r28.png</texturefocus>
+                <texturenofocus border="30" colordiffuse="FF1C62C0">ms_r28.png</texturenofocus>
+                <onleft>102</onleft>
+                <onright>110</onright>
+                <ondown>205</ondown>
+                <onup>110</onup>
+            </control>
+            <control type="image">
+                <left>1268</left>
+                <top>144</top>
+                <width>592</width>
+                <height>404</height>
+                <texture border="40" colordiffuse="FFFFFFFF">ms_ring28.png</texture>
+                <visible>Control.HasFocus(103)</visible>
+            </control>
+            <control type="image">
+                <left>1320</left>
+                <top>196</top>
+                <width>96</width>
+                <height>96</height>
+                <texture colordiffuse="FFFFFFFF">ic_series.png</texture>
+            </control>
+            <control type="label">
+                <left>1320</left>
+                <top>380</top>
+                <width>500</width>
+                <height>72</height>
+                <font>font45</font>
+                <textcolor>FFFFFFFF</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30002][/B]</label>
+            </control>
+            <control type="label">
+                <left>1320</left>
+                <top>452</top>
+                <width>500</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>E6FFFFFF</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(series_sub)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="104" center="auto" time="160" tween="sine" condition="Control.HasFocus(201)">Conditional</animation>
+            <control type="button" id="201">
+                <left>72</left>
+                <top>572</top>
+                <width>276</width>
+                <height>130</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="22" colordiffuse="FF1D2A44">ms_r20.png</texturefocus>
+                <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+                <onup>101</onup>
+                <ondown>600</ondown>
+                <onright>202</onright>
+            </control>
+            <control type="image">
+                <left>64</left>
+                <top>564</top>
+                <width>292</width>
+                <height>146</height>
+                <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+                <visible>Control.HasFocus(201)</visible>
+            </control>
+            <control type="image">
+                <left>92</left>
+                <top>605</top>
+                <width>64</width>
+                <height>64</height>
+                <texture border="22" colordiffuse="FF0E7C6E">ms_r20.png</texture>
+            </control>
+            <control type="image">
+                <left>106</left>
+                <top>619</top>
+                <width>36</width>
+                <height>36</height>
+                <texture colordiffuse="FFFFFFFF">ic_catchup.png</texture>
+            </control>
+            <control type="label">
+                <left>172</left>
+                <top>598</top>
+                <width>166</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30003][/B]</label>
+            </control>
+            <control type="label">
+                <left>172</left>
+                <top>638</top>
+                <width>166</width>
+                <height>34</height>
+                <font>font10</font>
+                <textcolor>FFA9B8D0</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(sc_201)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="104" center="auto" time="160" tween="sine" condition="Control.HasFocus(202)">Conditional</animation>
+            <control type="button" id="202">
+                <left>372</left>
+                <top>572</top>
+                <width>276</width>
+                <height>130</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="22" colordiffuse="FF1D2A44">ms_r20.png</texturefocus>
+                <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+                <onup>101</onup>
+                <ondown>600</ondown>
+                <onleft>201</onleft>
+                <onright>203</onright>
+            </control>
+            <control type="image">
+                <left>364</left>
+                <top>564</top>
+                <width>292</width>
+                <height>146</height>
+                <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+                <visible>Control.HasFocus(202)</visible>
+            </control>
+            <control type="image">
+                <left>392</left>
+                <top>605</top>
+                <width>64</width>
+                <height>64</height>
+                <texture border="22" colordiffuse="FFB0306A">ms_r20.png</texture>
+            </control>
+            <control type="image">
+                <left>406</left>
+                <top>619</top>
+                <width>36</width>
+                <height>36</height>
+                <texture colordiffuse="FFFFFFFF">ic_epg.png</texture>
+            </control>
+            <control type="label">
+                <left>472</left>
+                <top>598</top>
+                <width>166</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30015][/B]</label>
+            </control>
+            <control type="label">
+                <left>472</left>
+                <top>638</top>
+                <width>166</width>
+                <height>34</height>
+                <font>font10</font>
+                <textcolor>FFA9B8D0</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(sc_202)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="104" center="auto" time="160" tween="sine" condition="Control.HasFocus(203)">Conditional</animation>
+            <control type="button" id="203">
+                <left>672</left>
+                <top>572</top>
+                <width>276</width>
+                <height>130</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="22" colordiffuse="FF1D2A44">ms_r20.png</texturefocus>
+                <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+                <onup>102</onup>
+                <ondown>600</ondown>
+                <onleft>202</onleft>
+                <onright>204</onright>
+            </control>
+            <control type="image">
+                <left>664</left>
+                <top>564</top>
+                <width>292</width>
+                <height>146</height>
+                <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+                <visible>Control.HasFocus(203)</visible>
+            </control>
+            <control type="image">
+                <left>692</left>
+                <top>605</top>
+                <width>64</width>
+                <height>64</height>
+                <texture border="22" colordiffuse="FFC26A12">ms_r20.png</texture>
+            </control>
+            <control type="image">
+                <left>706</left>
+                <top>619</top>
+                <width>36</width>
+                <height>36</height>
+                <texture colordiffuse="FFFFFFFF">ic_fav.png</texture>
+            </control>
+            <control type="label">
+                <left>772</left>
+                <top>598</top>
+                <width>166</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30004][/B]</label>
+            </control>
+            <control type="label">
+                <left>772</left>
+                <top>638</top>
+                <width>166</width>
+                <height>34</height>
+                <font>font10</font>
+                <textcolor>FFA9B8D0</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(sc_203)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="104" center="auto" time="160" tween="sine" condition="Control.HasFocus(204)">Conditional</animation>
+            <control type="button" id="204">
+                <left>972</left>
+                <top>572</top>
+                <width>276</width>
+                <height>130</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="22" colordiffuse="FF1D2A44">ms_r20.png</texturefocus>
+                <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+                <onup>102</onup>
+                <ondown>600</ondown>
+                <onleft>203</onleft>
+                <onright>205</onright>
+            </control>
+            <control type="image">
+                <left>964</left>
+                <top>564</top>
+                <width>292</width>
+                <height>146</height>
+                <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+                <visible>Control.HasFocus(204)</visible>
+            </control>
+            <control type="image">
+                <left>992</left>
+                <top>605</top>
+                <width>64</width>
+                <height>64</height>
+                <texture border="22" colordiffuse="FF3949AB">ms_r20.png</texture>
+            </control>
+            <control type="image">
+                <left>1006</left>
+                <top>619</top>
+                <width>36</width>
+                <height>36</height>
+                <texture colordiffuse="FFFFFFFF">ic_search.png</texture>
+            </control>
+            <control type="label">
+                <left>1072</left>
+                <top>598</top>
+                <width>166</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30539][/B]</label>
+            </control>
+            <control type="label">
+                <left>1072</left>
+                <top>638</top>
+                <width>166</width>
+                <height>34</height>
+                <font>font10</font>
+                <textcolor>FFA9B8D0</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(sc_204)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="104" center="auto" time="160" tween="sine" condition="Control.HasFocus(205)">Conditional</animation>
+            <control type="button" id="205">
+                <left>1272</left>
+                <top>572</top>
+                <width>276</width>
+                <height>130</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="22" colordiffuse="FF1D2A44">ms_r20.png</texturefocus>
+                <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+                <onup>103</onup>
+                <ondown>600</ondown>
+                <onleft>204</onleft>
+                <onright>206</onright>
+            </control>
+            <control type="image">
+                <left>1264</left>
+                <top>564</top>
+                <width>292</width>
+                <height>146</height>
+                <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+                <visible>Control.HasFocus(205)</visible>
+            </control>
+            <control type="image">
+                <left>1292</left>
+                <top>605</top>
+                <width>64</width>
+                <height>64</height>
+                <texture border="22" colordiffuse="FF6D4C41">ms_r20.png</texture>
+            </control>
+            <control type="image">
+                <left>1306</left>
+                <top>619</top>
+                <width>36</width>
+                <height>36</height>
+                <texture colordiffuse="FFFFFFFF">ic_lists.png</texture>
+            </control>
+            <control type="label">
+                <left>1372</left>
+                <top>598</top>
+                <width>166</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30538][/B]</label>
+            </control>
+            <control type="label">
+                <left>1372</left>
+                <top>638</top>
+                <width>166</width>
+                <height>34</height>
+                <font>font10</font>
+                <textcolor>FFA9B8D0</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(sc_205)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <animation effect="zoom" end="104" center="auto" time="160" tween="sine" condition="Control.HasFocus(206)">Conditional</animation>
+            <control type="button" id="206">
+                <left>1572</left>
+                <top>572</top>
+                <width>276</width>
+                <height>130</height>
+                <label/>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <focusedcolor>FF0B1220</focusedcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <textoffsetx>0</textoffsetx>
+                <texturefocus border="22" colordiffuse="FF1D2A44">ms_r20.png</texturefocus>
+                <texturenofocus border="22" colordiffuse="FF16213A">ms_r20.png</texturenofocus>
+                <onup>103</onup>
+                <ondown>600</ondown>
+                <onleft>205</onleft>
+            </control>
+            <control type="image">
+                <left>1564</left>
+                <top>564</top>
+                <width>292</width>
+                <height>146</height>
+                <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+                <visible>Control.HasFocus(206)</visible>
+            </control>
+            <control type="image">
+                <left>1592</left>
+                <top>605</top>
+                <width>64</width>
+                <height>64</height>
+                <texture border="22" colordiffuse="FF00838F">ms_r20.png</texture>
+            </control>
+            <control type="image">
+                <left>1606</left>
+                <top>619</top>
+                <width>36</width>
+                <height>36</height>
+                <texture colordiffuse="FFFFFFFF">ic_account.png</texture>
+            </control>
+            <control type="label">
+                <left>1672</left>
+                <top>598</top>
+                <width>166</width>
+                <height>40</height>
+                <font>font12</font>
+                <textcolor>FFEAF1FB</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>[B]$ADDON[script.maxstream 30537][/B]</label>
+            </control>
+            <control type="label">
+                <left>1672</left>
+                <top>638</top>
+                <width>166</width>
+                <height>34</height>
+                <font>font10</font>
+                <textcolor>FFA9B8D0</textcolor>
+                <align>left</align>
+                <aligny>center</aligny>
+                <label>$INFO[Window.Property(sc_206)]</label>
+            </control>
+        </control>
+        <control type="label">
+            <left>72</left>
+            <top>730</top>
+            <width>900</width>
+            <height>48</height>
+            <font>font13</font>
+            <textcolor>FFEAF1FB</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>[B]$ADDON[script.maxstream 30072][/B]</label>
+        </control>
+        <control type="label">
+            <left>72</left>
+            <top>800</top>
+            <width>900</width>
+            <height>48</height>
+            <font>font12</font>
+            <textcolor>FFA9B8D0</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$ADDON[script.maxstream 30503]</label>
+            <visible>!Integer.IsGreater(Container(600).NumItems,0)</visible>
+        </control>
+        <control type="list" id="600">
+            <left>72</left>
+            <top>790</top>
+            <width>1776</width>
+            <height>170</height>
+            <orientation>horizontal</orientation>
+            <scrolltime tween="quadratic">220</scrolltime>
+            <onup>201</onup>
+            <itemlayout width="444" height="160">
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>420</width>
+                    <height>148</height>
+                    <texture border="22" colordiffuse="FF121C2E">ms_r20.png</texture>
+                </control>
+                <control type="image">
+                    <left>16</left>
+                    <top>18</top>
+                    <width>200</width>
+                    <height>112</height>
+                    <texture border="14" colordiffuse="FF1D2A44">ms_r12.png</texture>
+                </control>
+                <control type="image">
+                    <left>96</left>
+                    <top>54</top>
+                    <width>40</width>
+                    <height>40</height>
+                    <texture colordiffuse="FFA9B8D0">ic_play.png</texture>
+                    <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
+                </control>
+                <control type="image">
+                    <left>16</left>
+                    <top>18</top>
+                    <width>200</width>
+                    <height>112</height>
+                    <texture diffuse="ms_mask_thumb.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="label">
+                    <left>234</left>
+                    <top>22</top>
+                    <width>172</width>
+                    <height>36</height>
+                    <font>font10</font>
+                    <textcolor>FFEAF1FB</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>[B]$INFO[ListItem.Label][/B]</label>
+                </control>
+                <control type="label">
+                    <left>234</left>
+                    <top>60</top>
+                    <width>172</width>
+                    <height>32</height>
+                    <font>font10</font>
+                    <textcolor>FFA9B8D0</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+                <control type="progress">
+                    <left>234</left>
+                    <top>112</top>
+                    <width>166</width>
+                    <height>6</height>
+                    <texturebg border="3" colordiffuse="FF26324A">ms_r4.png</texturebg>
+                    <midtexture border="3" colordiffuse="FF29B6F6">ms_r4.png</midtexture>
+                    <info>ListItem.PercentPlayed</info>
+                </control>
+            </itemlayout>
+            <focusedlayout width="444" height="160">
+                <control type="image">
+                    <left>0</left>
+                    <top>0</top>
+                    <width>420</width>
+                    <height>148</height>
+                    <texture border="22" colordiffuse="FF121C2E">ms_r20.png</texture>
+                </control>
+                <control type="image">
+                    <left>16</left>
+                    <top>18</top>
+                    <width>200</width>
+                    <height>112</height>
+                    <texture border="14" colordiffuse="FF1D2A44">ms_r12.png</texture>
+                </control>
+                <control type="image">
+                    <left>96</left>
+                    <top>54</top>
+                    <width>40</width>
+                    <height>40</height>
+                    <texture colordiffuse="FFA9B8D0">ic_play.png</texture>
+                    <visible>String.IsEmpty(ListItem.Art(thumb))</visible>
+                </control>
+                <control type="image">
+                    <left>16</left>
+                    <top>18</top>
+                    <width>200</width>
+                    <height>112</height>
+                    <texture diffuse="ms_mask_thumb.png" background="true">$INFO[ListItem.Art(thumb)]</texture>
+                    <aspectratio>scale</aspectratio>
+                </control>
+                <control type="label">
+                    <left>234</left>
+                    <top>22</top>
+                    <width>172</width>
+                    <height>36</height>
+                    <font>font10</font>
+                    <textcolor>FFEAF1FB</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>[B]$INFO[ListItem.Label][/B]</label>
+                    <scroll>true</scroll>
+                    <scrollspeed>50</scrollspeed>
+                </control>
+                <control type="label">
+                    <left>234</left>
+                    <top>60</top>
+                    <width>172</width>
+                    <height>32</height>
+                    <font>font10</font>
+                    <textcolor>FFA9B8D0</textcolor>
+                    <align>left</align>
+                    <aligny>center</aligny>
+                    <label>$INFO[ListItem.Label2]</label>
+                    <scroll>true</scroll>
+                    <scrollspeed>50</scrollspeed>
+                </control>
+                <control type="progress">
+                    <left>234</left>
+                    <top>112</top>
+                    <width>166</width>
+                    <height>6</height>
+                    <texturebg border="3" colordiffuse="FF26324A">ms_r4.png</texturebg>
+                    <midtexture border="3" colordiffuse="FF29B6F6">ms_r4.png</midtexture>
+                    <info>ListItem.PercentPlayed</info>
+                </control>
+                <control type="image">
+                    <left>-6</left>
+                    <top>-6</top>
+                    <width>432</width>
+                    <height>160</height>
+                    <texture border="30" colordiffuse="FFFFFFFF">ms_ring20.png</texture>
+                    <visible>Control.HasFocus(600)</visible>
+                </control>
+            </focusedlayout>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,727 @@
+# Kodi Media Center language file
+# Addon Name: MaxStream IPTV
+# Addon id: script.maxstream
+msgid ""
+msgstr ""
+"Project-Id-Version: script.maxstream\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+
+msgctxt "#30000"
+msgid "Live TV"
+msgstr "TV en direct"
+
+msgctxt "#30001"
+msgid "Movies"
+msgstr "Films"
+
+msgctxt "#30002"
+msgid "Series"
+msgstr "Séries"
+
+msgctxt "#30003"
+msgid "Catch-up"
+msgstr "Replay"
+
+msgctxt "#30004"
+msgid "Favourites"
+msgstr "Favoris"
+
+msgctxt "#30005"
+msgid "Recently watched"
+msgstr "Vus récemment"
+
+msgctxt "#30006"
+msgid "Search"
+msgstr "Rechercher"
+
+msgctxt "#30007"
+msgid "Account information"
+msgstr "Informations du compte"
+
+msgctxt "#30008"
+msgid "Playlists"
+msgstr "Listes de lecture"
+
+msgctxt "#30009"
+msgid "Settings"
+msgstr "Paramètres"
+
+msgctxt "#30010"
+msgid "Add playlist"
+msgstr "Ajouter une liste"
+
+msgctxt "#30011"
+msgid "All"
+msgstr "Tout"
+
+msgctxt "#30013"
+msgid "Refresh playlist"
+msgstr "Actualiser la liste"
+
+msgctxt "#30014"
+msgid "Update TV guide (EPG)"
+msgstr "Mettre à jour le guide TV (EPG)"
+
+msgctxt "#30015"
+msgid "TV guide"
+msgstr "Guide TV"
+
+msgctxt "#30016"
+msgid "Add to favourites"
+msgstr "Ajouter aux favoris"
+
+msgctxt "#30017"
+msgid "Remove from favourites"
+msgstr "Retirer des favoris"
+
+msgctxt "#30018"
+msgid "Hide category"
+msgstr "Masquer la catégorie"
+
+msgctxt "#30019"
+msgid "Information"
+msgstr "Informations"
+
+msgctxt "#30020"
+msgid "Remove"
+msgstr "Supprimer"
+
+msgctxt "#30021"
+msgid "Clear history"
+msgstr "Effacer l'historique"
+
+msgctxt "#30022"
+msgid "Season %s"
+msgstr "Saison %s"
+
+msgctxt "#30023"
+msgid "Resume from %s"
+msgstr "Reprendre à %s"
+
+msgctxt "#30024"
+msgid "Start from the beginning"
+msgstr "Lire depuis le début"
+
+msgctxt "#30025"
+msgid "Now"
+msgstr "Maintenant"
+
+msgctxt "#30026"
+msgid "Next"
+msgstr "Ensuite"
+
+msgctxt "#30027"
+msgid "LIVE"
+msgstr "DIRECT"
+
+msgctxt "#30028"
+msgid "No playlist yet. Add your Xtream Codes account or M3U playlist to get started."
+msgstr "Aucune liste pour l'instant. Ajoutez votre compte Xtream Codes ou votre liste M3U pour commencer."
+
+msgctxt "#30029"
+msgid "Playlist type"
+msgstr "Type de liste"
+
+msgctxt "#30030"
+msgid "Xtream Codes API"
+msgstr "API Xtream Codes"
+
+msgctxt "#30031"
+msgid "M3U URL"
+msgstr "URL M3U"
+
+msgctxt "#30032"
+msgid "M3U file"
+msgstr "Fichier M3U"
+
+msgctxt "#30033"
+msgid "Playlist name"
+msgstr "Nom de la liste"
+
+msgctxt "#30034"
+msgid "Server URL (http://host:port)"
+msgstr "URL du serveur (http://hote:port)"
+
+msgctxt "#30035"
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+msgctxt "#30036"
+msgid "Password"
+msgstr "Mot de passe"
+
+msgctxt "#30037"
+msgid "M3U playlist URL"
+msgstr "URL de la liste M3U"
+
+msgctxt "#30038"
+msgid "EPG / XMLTV URL (optional)"
+msgstr "URL EPG / XMLTV (facultatif)"
+
+msgctxt "#30039"
+msgid "Connecting..."
+msgstr "Connexion..."
+
+msgctxt "#30040"
+msgid "Playlist added"
+msgstr "Liste ajoutée"
+
+msgctxt "#30041"
+msgid "Connection failed: %s"
+msgstr "Échec de connexion : %s"
+
+msgctxt "#30042"
+msgid "Activate"
+msgstr "Activer"
+
+msgctxt "#30043"
+msgid "Edit"
+msgstr "Modifier"
+
+msgctxt "#30044"
+msgid "Delete"
+msgstr "Supprimer"
+
+msgctxt "#30045"
+msgid "Delete playlist \"%s\"?"
+msgstr "Supprimer la liste « %s » ?"
+
+msgctxt "#30046"
+msgid "Active"
+msgstr "Active"
+
+msgctxt "#30048"
+msgid "Enter parental PIN"
+msgstr "Code PIN parental"
+
+msgctxt "#30049"
+msgid "Wrong PIN"
+msgstr "Code PIN incorrect"
+
+msgctxt "#30050"
+msgid "Status"
+msgstr "Statut"
+
+msgctxt "#30051"
+msgid "Expiry date"
+msgstr "Date d'expiration"
+
+msgctxt "#30052"
+msgid "Unlimited"
+msgstr "Illimité"
+
+msgctxt "#30053"
+msgid "Connections (active / max)"
+msgstr "Connexions (actives / max)"
+
+msgctxt "#30055"
+msgid "Trial"
+msgstr "Essai"
+
+msgctxt "#30056"
+msgid "Created"
+msgstr "Créé le"
+
+msgctxt "#30057"
+msgid "Server timezone"
+msgstr "Fuseau horaire du serveur"
+
+msgctxt "#30060"
+msgid "Cache cleared"
+msgstr "Cache vidé"
+
+msgctxt "#30061"
+msgid "TV guide updated (%s channels)"
+msgstr "Guide TV mis à jour (%s chaînes)"
+
+msgctxt "#30062"
+msgid "No results"
+msgstr "Aucun résultat"
+
+msgctxt "#30063"
+msgid "Downloading TV guide..."
+msgstr "Téléchargement du guide TV..."
+
+msgctxt "#30064"
+msgid "This is an Xtream Codes link. Add it as an Xtream Codes account (recommended: Movies, Series, Catch-up and account info)?"
+msgstr "Ceci est un lien Xtream Codes. L'ajouter comme compte Xtream Codes (recommandé : films, séries, replay et infos du compte) ?"
+
+msgctxt "#30065"
+msgid "Hidden categories - select to show again"
+msgstr "Catégories masquées - sélectionnez pour les réafficher"
+
+msgctxt "#30066"
+msgid "No hidden categories"
+msgstr "Aucune catégorie masquée"
+
+msgctxt "#30067"
+msgid "Category hidden"
+msgstr "Catégorie masquée"
+
+msgctxt "#30068"
+msgid "Nothing here yet"
+msgstr "Rien pour le moment"
+
+msgctxt "#30069"
+msgid "No programme guide for this channel"
+msgstr "Pas de guide des programmes pour cette chaîne"
+
+msgctxt "#30071"
+msgid "Search: %s"
+msgstr "Recherche : %s"
+
+msgctxt "#30072"
+msgid "Continue watching"
+msgstr "Reprendre la lecture"
+
+msgctxt "#30076"
+msgid "Playlist updated"
+msgstr "Liste mise à jour"
+
+msgctxt "#30078"
+msgid "Locked"
+msgstr "Verrouillé"
+
+msgctxt "#30079"
+msgid "Catch-up %s days"
+msgstr "Replay %s jours"
+
+msgctxt "#30080"
+msgid "Episodes"
+msgstr "Épisodes"
+
+msgctxt "#30081"
+msgid "Play from the beginning"
+msgstr "Lire depuis le début"
+
+msgctxt "#30082"
+msgid "Loading channels, movies and series..."
+msgstr "Chargement des chaînes, films et séries..."
+
+msgctxt "#30086"
+msgid "Recently added"
+msgstr "Ajouts récents"
+
+msgctxt "#30090"
+msgid "No TV guide source for this playlist"
+msgstr "Aucune source de guide TV pour cette liste"
+
+msgctxt "#30091"
+msgid "Yes"
+msgstr "Oui"
+
+msgctxt "#30092"
+msgid "No"
+msgstr "Non"
+
+msgctxt "#30093"
+msgid "Cancelled"
+msgstr "Annulé"
+
+msgctxt "#30100"
+msgid "General"
+msgstr "Général"
+
+msgctxt "#30101"
+msgid "Display"
+msgstr "Affichage"
+
+msgctxt "#30102"
+msgid "Playlists"
+msgstr "Listes de lecture"
+
+msgctxt "#30103"
+msgid "Cache"
+msgstr "Cache"
+
+msgctxt "#30110"
+msgid "Sort order"
+msgstr "Ordre de tri"
+
+msgctxt "#30111"
+msgid "Default (provider order)"
+msgstr "Par défaut (ordre du fournisseur)"
+
+msgctxt "#30112"
+msgid "A - Z"
+msgstr "A - Z"
+
+msgctxt "#30113"
+msgid "Z - A"
+msgstr "Z - A"
+
+msgctxt "#30114"
+msgid "Recently added"
+msgstr "Ajouts récents"
+
+msgctxt "#30115"
+msgid "Show channel numbers"
+msgstr "Afficher les numéros de chaîne"
+
+msgctxt "#30116"
+msgid "Show current programme in channel list"
+msgstr "Afficher le programme en cours dans la liste des chaînes"
+
+msgctxt "#30117"
+msgid "24-hour clock"
+msgstr "Horloge 24 heures"
+
+msgctxt "#30118"
+msgid "Show \"All\" category"
+msgstr "Afficher la catégorie « Tout »"
+
+msgctxt "#30120"
+msgid "Manage playlists"
+msgstr "Gérer les listes"
+
+msgctxt "#30121"
+msgid "Add playlist"
+msgstr "Ajouter une liste"
+
+msgctxt "#30122"
+msgid "Manage hidden categories"
+msgstr "Gérer les catégories masquées"
+
+msgctxt "#30125"
+msgid "Keep downloaded catalogue for (hours)"
+msgstr "Conserver le catalogue téléchargé (heures)"
+
+msgctxt "#30126"
+msgid "Clear cache"
+msgstr "Vider le cache"
+
+msgctxt "#30200"
+msgid "Playback"
+msgstr "Lecture"
+
+msgctxt "#30201"
+msgid "Live stream format (Xtream)"
+msgstr "Format des flux en direct (Xtream)"
+
+msgctxt "#30202"
+msgid "MPEG-TS (.ts)"
+msgstr "MPEG-TS (.ts)"
+
+msgctxt "#30203"
+msgid "HLS (.m3u8)"
+msgstr "HLS (.m3u8)"
+
+msgctxt "#30204"
+msgid "Live player"
+msgstr "Lecteur du direct"
+
+msgctxt "#30205"
+msgid "Kodi built-in player"
+msgstr "Lecteur intégré de Kodi"
+
+msgctxt "#30206"
+msgid "InputStream FFmpeg Direct (timeshift)"
+msgstr "InputStream FFmpeg Direct (timeshift)"
+
+msgctxt "#30207"
+msgid "InputStream Adaptive (HLS only)"
+msgstr "InputStream Adaptive (HLS uniquement)"
+
+msgctxt "#30210"
+msgid "Ask to resume movies and episodes"
+msgstr "Proposer de reprendre films et épisodes"
+
+msgctxt "#30211"
+msgid "History size"
+msgstr "Taille de l'historique"
+
+msgctxt "#30212"
+msgid "User-Agent"
+msgstr "User-Agent"
+
+msgctxt "#30213"
+msgid "Verify SSL certificates"
+msgstr "Vérifier les certificats SSL"
+
+msgctxt "#30214"
+msgid "Network timeout (seconds)"
+msgstr "Délai réseau (secondes)"
+
+msgctxt "#30215"
+msgid "Network"
+msgstr "Réseau"
+
+msgctxt "#30300"
+msgid "TV guide"
+msgstr "Guide TV"
+
+msgctxt "#30301"
+msgid "Enable TV guide (EPG)"
+msgstr "Activer le guide TV (EPG)"
+
+msgctxt "#30302"
+msgid "Refresh every (hours)"
+msgstr "Actualiser toutes les (heures)"
+
+msgctxt "#30303"
+msgid "Time offset (hours)"
+msgstr "Décalage horaire (heures)"
+
+msgctxt "#30304"
+msgid "Keep past days (catch-up)"
+msgstr "Jours passés conservés (replay)"
+
+msgctxt "#30305"
+msgid "Keep future days"
+msgstr "Jours futurs conservés"
+
+msgctxt "#30306"
+msgid "Update TV guide now"
+msgstr "Mettre à jour le guide TV maintenant"
+
+msgctxt "#30400"
+msgid "Parental control"
+msgstr "Contrôle parental"
+
+msgctxt "#30401"
+msgid "Enable parental control"
+msgstr "Activer le contrôle parental"
+
+msgctxt "#30402"
+msgid "PIN code"
+msgstr "Code PIN"
+
+msgctxt "#30403"
+msgid "Locked keywords (comma separated)"
+msgstr "Mots-clés verrouillés (séparés par des virgules)"
+
+msgctxt "#30404"
+msgid "Hide locked categories completely"
+msgstr "Masquer complètement les catégories verrouillées"
+
+msgctxt "#30405"
+msgid "Lock again now"
+msgstr "Reverrouiller maintenant"
+
+msgctxt "#30500"
+msgid "%s channels · %s categories"
+msgstr "%s chaînes · %s catégories"
+
+msgctxt "#30501"
+msgid "%s titles"
+msgstr "%s titres"
+
+msgctxt "#30502"
+msgid "%s series"
+msgstr "%s séries"
+
+msgctxt "#30503"
+msgid "Nothing in progress"
+msgstr "Rien en cours"
+
+msgctxt "#30504"
+msgid "Search a channel"
+msgstr "Rechercher une chaîne"
+
+msgctxt "#30505"
+msgid "Fullscreen"
+msgstr "Plein écran"
+
+msgctxt "#30506"
+msgid "Press OK to preview the channel"
+msgstr "Appuyez sur OK pour l'aperçu de la chaîne"
+
+msgctxt "#30507"
+msgid "UP NEXT"
+msgstr "ENSUITE"
+
+msgctxt "#30508"
+msgid "Expires %s"
+msgstr "Expire le %s"
+
+msgctxt "#30509"
+msgid "Top rated"
+msgstr "Mieux notés"
+
+msgctxt "#30510"
+msgid "Play"
+msgstr "Lire"
+
+msgctxt "#30511"
+msgid "From the beginning"
+msgstr "Depuis le début"
+
+msgctxt "#30512"
+msgid "Trailer"
+msgstr "Bande-annonce"
+
+msgctxt "#30513"
+msgid "In the same category"
+msgstr "Dans la même catégorie"
+
+msgctxt "#30514"
+msgid "Movie · %s left"
+msgstr "Film · reste %s"
+
+msgctxt "#30515"
+msgid "Episode · %s left"
+msgstr "Épisode · reste %s"
+
+msgctxt "#30516"
+msgid "Watched %s"
+msgstr "Vu à %s"
+
+msgctxt "#30517"
+msgid "%s left"
+msgstr "reste %s"
+
+msgctxt "#30518"
+msgid "Resume at %s"
+msgstr "Reprendre à %s"
+
+msgctxt "#30519"
+msgid "Play %s"
+msgstr "Lire %s"
+
+msgctxt "#30520"
+msgid "Resume %s"
+msgstr "Reprendre %s"
+
+msgctxt "#30521"
+msgid "NEW"
+msgstr "NOUVEAU"
+
+msgctxt "#30522"
+msgid "REPLAY"
+msgstr "REPLAY"
+
+msgctxt "#30523"
+msgid "Channels (%s)"
+msgstr "Chaînes (%s)"
+
+msgctxt "#30524"
+msgid "Movies (%s)"
+msgstr "Films (%s)"
+
+msgctxt "#30525"
+msgid "Series (%s)"
+msgstr "Séries (%s)"
+
+msgctxt "#30527"
+msgid "Locked - press OK to unlock"
+msgstr "Verrouillé - OK pour déverrouiller"
+
+msgctxt "#30528"
+msgid "No channels"
+msgstr "Aucune chaîne"
+
+msgctxt "#30529"
+msgid "Today"
+msgstr "Aujourd'hui"
+
+msgctxt "#30530"
+msgid "%s episodes"
+msgstr "%s épisodes"
+
+msgctxt "#30531"
+msgid "Trailer not available"
+msgstr "Bande-annonce non disponible"
+
+msgctxt "#30533"
+msgid "Seasons"
+msgstr "Saisons"
+
+msgctxt "#30536"
+msgid "Back"
+msgstr "Retour"
+
+msgctxt "#30537"
+msgid "Account"
+msgstr "Compte"
+
+msgctxt "#30538"
+msgid "Playlists"
+msgstr "Listes"
+
+msgctxt "#30539"
+msgid "Search"
+msgstr "Recherche"
+
+msgctxt "#30600"
+msgid "Kodi TV menu"
+msgstr "Menu TV de Kodi"
+
+msgctxt "#30601"
+msgid "Keep channels synchronised with Kodi's TV menu (IPTV Simple)"
+msgstr "Synchroniser les chaînes avec le menu TV de Kodi (IPTV Simple)"
+
+msgctxt "#30602"
+msgid "Exclude locked (adult) categories"
+msgstr "Exclure les catégories verrouillées (adultes)"
+
+msgctxt "#30603"
+msgid "Send channels to Kodi's TV menu"
+msgstr "Envoyer les chaînes vers le menu TV de Kodi"
+
+msgctxt "#30604"
+msgid "Kodi's TV menu needs the free add-on \"PVR IPTV Simple Client\". Install it now?"
+msgstr "Le menu TV de Kodi nécessite l'extension gratuite « PVR IPTV Simple Client ». L'installer maintenant ?"
+
+msgctxt "#30605"
+msgid "PVR IPTV Simple Client could not be installed. Install it from Add-ons > Install from repository > PVR clients, then try again."
+msgstr "PVR IPTV Simple Client n'a pas pu être installé. Installez-le depuis Extensions > Installer depuis un dépôt > Clients PVR, puis réessayez."
+
+msgctxt "#30606"
+msgid "Preparing channels for Kodi's TV menu..."
+msgstr "Préparation des chaînes pour le menu TV de Kodi..."
+
+msgctxt "#30607"
+msgid "%s channels sent to Kodi's TV menu. They appear under TV after a few seconds; if not, restart Kodi."
+msgstr "%s chaînes envoyées vers le menu TV de Kodi. Elles apparaissent dans TV après quelques secondes ; sinon, redémarrez Kodi."
+
+msgctxt "#30610"
+msgid "Director"
+msgstr "Réalisation"
+
+msgctxt "#30611"
+msgid "Cast"
+msgstr "Casting"
+
+msgctxt "#30620"
+msgid "Movies and series can freeze for a few seconds with Kodi's default buffer (20 MB) when the IPTV server slows down. Optimise Kodi's cache for streaming now?"
+msgstr "Les films et séries peuvent se figer quelques secondes avec le petit tampon par défaut de Kodi (20 Mo) quand le serveur IPTV ralentit. Optimiser le cache de Kodi pour le streaming maintenant ?"
+
+msgctxt "#30621"
+msgid "Optimise Kodi for streaming"
+msgstr "Optimiser Kodi pour le streaming"
+
+msgctxt "#30622"
+msgid "Kodi cache set to %s MB, read speed %sx. Network reconnections are improved after a Kodi restart."
+msgstr "Cache de Kodi réglé sur %s Mo, vitesse de lecture %sx. Les reconnexions réseau sont améliorées après un redémarrage de Kodi."
+
+msgctxt "#30623"
+msgid "Kodi refused the change. Set it in Settings > Services > Caching (Expert level): memory size 256 MB, read factor 20x."
+msgstr "Kodi a refusé la modification. Réglez-la dans Paramètres > Services > Cache (niveau Expert) : taille mémoire 256 Mo, facteur de lecture 20x."
+
+msgctxt "#30624"
+msgid "Reconnect automatically when the provider stalls (recommended)"
+msgstr "Reconnexion automatique quand le fournisseur bloque (recommandé)"
+
+msgctxt "#30630"
+msgid "Support MaxStream (5 € donation)"
+msgstr "Soutenir MaxStream (don de 5 €)"
+
+msgctxt "#30631"
+msgid "MaxStream is free. If you enjoy it, you can offer €5 to its developer: scan the code with your phone, or open paypal.me/MaxStreamKodi/5EUR. Thank you!"
+msgstr "MaxStream est gratuit. Si tu l'apprécies, tu peux offrir 5 € à son développeur : scanne le code avec ton téléphone, ou ouvre paypal.me/MaxStreamKodi/5EUR. Merci !"
+
+msgctxt "#30632"
+msgid "Open in browser"
+msgstr "Ouvrir dans le navigateur"
+
+msgctxt "#30633"
+msgid "Close"
+msgstr "Fermer"
+
+msgctxt "#30634"
+msgid "No browser available on this device: scan the QR code with your phone."
+msgstr "Aucun navigateur sur cet appareil : scanne le QR code avec ton téléphone."
+
