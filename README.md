@@ -7,11 +7,11 @@ ses chaînes et le guide TV vers le **menu TV de Kodi** (via PVR IPTV Simple Cli
 
 ## Installation
 
-**Page de téléchargement : https://xmahieu.github.io/maxstream/**
+**Page de téléchargement : https://maxstreamkodi-cyber.github.io/maxstream/**
 
 1. Kodi › Paramètres › Système › Extensions › activer **Sources inconnues**.
-2. Paramètres › Gestionnaire de fichiers › Ajouter une source : `https://xmahieu.github.io/maxstream/` (nom : maxstream).
-3. Extensions › **Installer depuis un fichier zip** › maxstream › `repository.maxstream-1.0.0.zip`.
+2. Paramètres › Gestionnaire de fichiers › Ajouter une source : `https://maxstreamkodi-cyber.github.io/maxstream/` (nom : maxstream).
+3. Extensions › **Installer depuis un fichier zip** › maxstream › `repository.maxstream-1.0.1.zip`.
 4. Extensions › **Installer depuis un dépôt** › MaxStream Repository › Extensions de programmes › **MaxStream IPTV**.
 
 Les mises à jour arrivent ensuite automatiquement. MaxStream s'ouvre dans Extensions › Programmes.

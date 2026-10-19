@@ -18,7 +18,7 @@ import zipfile
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, 'docs')
 ADDONS = ['script.maxstream', 'repository.maxstream']
-PAGE_URL = 'https://xmahieu.github.io/maxstream/'
+PAGE_URL = 'https://maxstreamkodi-cyber.github.io/maxstream/'
 DONATE_URL = 'https://paypal.me/MaxStreamKodi/5EUR'
 
 
